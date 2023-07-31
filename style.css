@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Comfortaa:wght@300&display=swap');
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* NAV */
+.navbar {
+  background-color: #e7e7e7 !important;
+}
+
+/* HERO */
+.hero {
+  height: 50vh;
+  margin-top: 50px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(48, 45, 58);
+}
+
+.hero h1 {
+  font-family: "Aclonica";
+  font-size: 70px;
+  background: linear-gradient(to right, #218af3, #08ffe2,
+      #cf23cf, #30e2fa);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.logo {
+  height: 250px;
+}
+
+/* HERO TEXT ANIMATION */
+.rotating-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotating-section h2 {
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  animation: rotateWords 3s infinite;
+}
+
+@keyframes rotateWords {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* END OF HERO TEXT ANIMATION */
+
+/* Technologies */
+.technologies-section {
+  padding: 50px 0;
+}
+
+.technology-logo {
+  width: 100px;
+  height: 100px;
+  /* border: 2px solid black; */
+  object-fit: contain;
+}
+
+.technology-name {
+  margin-top: 10px;
+}
+
+/* contact */
+.contact {
+  max-width: 500px;
+}
+
+
+/* projects */
+.card {
+  background-color: #08ffe200;
+  border: none;
+}
+
+.card-title {
+  font-size: 25px;
+
+
+}
+
+.project-card {
+  min-width: 400px;
+}
+
+.custom-min-width {
+  min-width: 100px;
+}
+
+.project-row-even {
+  background-color: #ffffff00;
+}
+
+.project-row-odd {
+  background-color: #efc5c500;
+}
+
+
+/* Adjust the card width on smaller screens */
+@media (max-width: 991px) {
+  .project-card {
+    min-width: auto;
+    /* Allow the cards to take full width on smaller screens */
+  }
+}
+
+/* adjust hero text size on smaller screens */
+@media (max-width: 550px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+  .logo {
+    height: 200px;
+  }
+}
