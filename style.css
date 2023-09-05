@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Comfortaa:wght@300&display=swap');
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,700&family=Work+Sans:wght@800&display=swap');
+html {
+  --large-font: 'Work Sans', sans-serif;
+  --mid-font: 'Hind', sans-serif;
+  --small-font:'Nunito Sans', sans-serif;
 }
 
+body {
+  font-family: var(--small-font);
+  font-weight: 400;
+}
+
+h2{
+  font-family: var(--large-font);
+  font-size: 40px
+}
+
+h5{
+  font-family: var(--small-font);
+  font-weight: 700;
+}
 /* NAV */
 .navbar {
   background-color: #e7e7e7 !important;
@@ -59,6 +75,30 @@ body {
 
 /* END OF HERO TEXT ANIMATION */
 
+/* Buttons */
+
+.btn:hover{
+  background-color: #9323cf;
+}
+
+/* About */
+
+.custom-section {
+  background-color: #f0f0f0; /* Change the background color */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 15px; /* Add curved edges */
+  margin-bottom: 20px; /* Add margin to separate sections */
+  max-width: 700px;
+}
+
+/* Define different colors for each section */
+#about .custom-section:nth-child(odd) {
+  background-color: #d6b2f955; /* Yellow */
+}
+
+#about .custom-section:nth-child(even) {
+  background-color: #b5c0ff92; /* Blue */
+}
 /* Technologies */
 .technologies-section {
   padding: 50px 0;

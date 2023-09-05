@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Realm | Web Development</title>
-     <link rel="icon" href="./media/tabLogo.png" type="image/png">
+    <link rel="icon" href="./media/tabLogo.png" type="image/png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
@@ -26,6 +26,9 @@
                     <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
@@ -43,13 +46,24 @@
             <div class="rotating-section">
                 <h2 id="rotatingText">Web Development</h2>
             </div>
+            <div class="container">
+                <form id="consultation-form" class="mt-4">
+                    <div class="form-group d-flex" style="max-width: 500px; margin: 0 auto;">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required>
+                        <button class="btn btn-primary ml-2" type="submit" style="white-space: nowrap;">Get a Free Consultation</button>
+                    </div>
+                </form>
+                <div id="thank-you-message" style="display: none;" class="mt-2">
+                    <p>Thank you, we will be in touch shortly!</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center">Services</h2>
+            <h2 class="text-center mb-4">What We Do</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
@@ -59,7 +73,8 @@
                         </video>
                         <div class="card-body">
                             <h5 class="text-center card-title">Web Development</h5>
-                            <p class="card-text text-center">We design and develop responsive and user-friendly websites that help
+                            <p class="card-text text-center">We design and develop responsive and user-friendly websites
+                                that help
                                 businesses establish their online presence. Custom made to suit your business and style.
                             </p>
                         </div>
@@ -73,7 +88,8 @@
                         </video>
                         <div class="card-body">
                             <h5 class="text-center card-title">Responsive Design</h5>
-                            <p class="card-text text-center">We craft visually appealing and responsive websites that adapt
+                            <p class="card-text text-center"> We craft visually appealing and responsive websites that
+                                adapt
                                 seamlessly to different screen sizes, ensuring an optimal user experience for your
                                 visitors.
                         </div>
@@ -89,83 +105,32 @@
                         <!-- <img src="service3.png" class="card-img-top" alt="Service 3"> -->
                         <div class="card-body">
                             <h5 class="card-title text-center">Website Maintenance</h5>
-                            <p class="card-text text-center">We offer ongoing maintenance and support services to ensure your
+                            <p class="card-text text-center">We offer ongoing maintenance and support services to ensure
+                                your
                                 website stays up-to-date and running smoothly, freeing you to focus on your core
                                 business.</p>
                         </div>
                     </div>
                 </div>
+
+            </div>
+            <div class="text-center">
+                <a class="btn btn-primary mr-3" href="#about">Learn More</a>
+                <a class="btn btn-primary" href="#contact">Get in Touch</a>
             </div>
         </div>
     </section>
 
-    <!-- Technologies -->
-
-    <div class="container">
-        <h2 class="text-center mt-5">Technologies</h2>
-        <div class="row">
-            <div class="col-md-12">
-                <section class="technologies-section">
-                    <div class="row justify-content-center">
-                        <!-- Technology 1 -->
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
-                            <img src="./media/technologies/logo-react-icon.png" alt="React Logo"
-                                class="img-fluid technology-logo">
-                            <div class="technology-name">React</div>
-                        </div>
-                        <!-- Technology 2 -->
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
-                            <img src="./media/technologies/flask.png" alt="Flask Logo"
-                                class="img-fluid technology-logo">
-                            <div class="technology-name">Flask</div>
-                        </div>
-                        <!-- Technology 3 -->
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
-                            <img src="./media/technologies/Bootstrap_logo.png" alt="Bootstrap Logo"
-                                class="img-fluid technology-logo">
-                            <div class="technology-name">Bootstrap</div>
-                        </div>
-                        <!-- Technology 4 -->
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
-                            <img src="./media/technologies/html5.jpg" alt="HTML5 Logo"
-                                class="img-fluid technology-logo">
-                            <div class="technology-name">HTML5</div>
-                        </div>
-                        <!-- Technology 5 -->
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center">
-                            <img src="./media/technologies/css3.png" alt="CSS Logo" class="img-fluid technology-logo">
-                            <div class="technology-name">CSS</div>
-                        </div>
-                        <!-- Technology 6 -->
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center">
-                            <img src="./media/technologies/javascript.png" alt="Javascript Logo"
-                                class="img-fluid technology-logo">
-                            <div class="technology-name">JavaScript</div>
-                        </div>
-                        <!-- Technology 7 -->
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center">
-                            <img src="./media/technologies/MySQL-Logo.jpg" alt="mySQl Logo"
-                                class="img-fluid technology-logo">
-                            <div class="technology-name">MySQL</div>
-                        </div>
-                        <!-- Technology 8 -->
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center">
-                            <img src="./media/technologies/git.png" alt="Git Logo" class="img-fluid technology-logo">
-                            <div class="technology-name">Git</div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-
-
 
     <!-- Projects -->
 
-    <section id="projects" class="py-5 bg-light">
+    <section id="projects" class="py-5">
         <div class="container">
-            <h2 class="text-center">Projects</h2>
+            <h2 class="text-center mb-4">Projects</h2>
+            <p class="text-center">From sleek and modern designs to intuitive user interfaces, each site is unique and
+                crafted to fit your brand and style.
+                <br>Browse through the projects below to get a glimpse of our work.
+            </p>
             <div class="row project-row-odd my-5">
                 <div class="col-md-6">
                     <div class="card project-card my-1">
@@ -227,18 +192,137 @@
                     </div>
                 </div>
             </div>
+            <div class="text-center">
+                <!-- <button class="btn btn-primary">See More Projects</button> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">About Digital Realm</h2>
+
+            <div class="custom-section">
+                <h5 class="text-center card-title">What We Offer</h5>
+                <p>At Digital Realm, we offer a blend of creativity, technical expertise, and a commitment to
+                    excellence. We specialize in:</p>
+                <ul>
+                    <li>Responsive Web Design</li>
+                    <li>Front-End Development</li>
+                    <li>Custom Website Solutions</li>
+                    <li>Optimized User Experiences</li>
+                </ul>
+                <p>Our goal is to create websites that not only look great but also deliver results. We believe that a
+                    strong online presence can make a significant impact on your brand's success.</p>
+            </div>
+
+            <div class="custom-section mx-auto">
+                <h5 class="text-center card-title">Collaborative Approach</h5>
+                <p>Collaboration and communication are at the core of our process. We work closely with you to
+                    understand your unique needs and goals. From concept to launch, we're dedicated to bringing your
+                    vision to life through thoughtful design, meticulous development, and seamless execution.</p>
+                <p>Throughout the process, we prioritize transparency and ensure that you're involved every step of the
+                    way. Your feedback and input are invaluable in creating a website that truly reflects your brand and
+                    resonates with your target audience.</p>
+            </div>
+
+            <div class="custom-section ml-auto">
+                <h5 class="text-center card-title ">Why Choose Us</h5>
+                <p>Choosing the right website developer is a crucial decision. Here's why Digital Realm is the right
+                    choice:</p>
+                <ul>
+                    <li>Custom Solutions: We believe in tailored solutions. Your website will be uniquely designed to
+                        meet your specific goals and requirements.</li>
+                    <li>Attention to Detail: We're passionate about details. From the layout to the smallest elements,
+                        every aspect of your website will be carefully considered.</li>
+                    <li>Support and Maintenance: Our relationship with you doesn't end with the launch. We provide
+                        ongoing support and maintenance to ensure your website stays up to date and performs optimally.
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
 
 
+    <!-- Technologies -->
+
+    <div class="container">
+        <h2 class="text-center mt-5">Technologies</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <section class="technologies-section">
+                    <div class="row justify-content-center">
+                        <!-- Technology 1 -->
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
+                            <img src="./media/technologies/logo-react-icon.png" alt="React Logo"
+                                class="img-fluid technology-logo">
+                            <div class="technology-name">React</div>
+                        </div>
+                        <!-- Technology 2 -->
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
+                            <img src="./media/technologies/flask.png" alt="Flask Logo"
+                                class="img-fluid technology-logo">
+                            <div class="technology-name">Flask</div>
+                        </div>
+                        <!-- Technology 3 -->
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
+                            <img src="./media/technologies/Bootstrap_logo.png" alt="Bootstrap Logo"
+                                class="img-fluid technology-logo">
+                            <div class="technology-name">Bootstrap</div>
+                        </div>
+                        <!-- Technology 4 -->
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
+                            <img src="./media/technologies/html5.jpg" alt="HTML5 Logo"
+                                class="img-fluid technology-logo">
+                            <div class="technology-name">HTML5</div>
+                        </div>
+                        <!-- Technology 5 -->
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center">
+                            <img src="./media/technologies/css3.png" alt="CSS Logo" class="img-fluid technology-logo">
+                            <div class="technology-name">CSS</div>
+                        </div>
+                        <!-- Technology 6 -->
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center">
+                            <img src="./media/technologies/javascript.png" alt="Javascript Logo"
+                                class="img-fluid technology-logo">
+                            <div class="technology-name">JavaScript</div>
+                        </div>
+                        <!-- Technology 7 -->
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center">
+                            <img src="./media/technologies/MySQL-Logo.jpg" alt="mySQl Logo"
+                                class="img-fluid technology-logo">
+                            <div class="technology-name">MySQL</div>
+                        </div>
+                        <!-- Technology 8 -->
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center">
+                            <img src="./media/technologies/git.png" alt="Git Logo" class="img-fluid technology-logo">
+                            <div class="technology-name">Git</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
     <!-- Contact Section -->
     <section id="contact" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center">Contact</h2>
-            <p class="text-center">Get in touch with us to discuss your website requirements or for any inquiries. We'd
-                love to hear from
-                you!</p>
+            <div class="text-center mt-5">
+                <h2>Let's Work Together!</h2>
+                <div class="text-center mx-auto" style="max-width: 600px;">
+                    <p>Whether you're a startup, a small business, or an established brand, we're here to help you make
+                        your
+                        mark in the digital realm. Let's collaborate and create a website that embodies your vision and
+                        elevates
+                        your online presence.</p>
+                    <p>Contact us today to discuss your project, and let's embark on an exciting journey of digital
+                        innovation.
+                    </p>
+                </div>
+            </div>
             <form id="contact-form" class="contact mx-auto">
                 <input type="hidden" name="contact_number">
                 <div class="form-group">
@@ -254,7 +338,7 @@
                 </div>
                 <div class="d-flex justify-content-end">
                     <input type="submit" class="btn btn-primary" value="Send Message">
-                  </div>
+                </div>
             </form>
         </div>
     </section>
@@ -294,8 +378,30 @@
 
         setInterval(rotateWords, 3000);
 
+        // ------ CONSULTATION FORM ---------//
 
-        //------- CONTACT FORM -------//
+
+        document.getElementById("consultation-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const userEmail = document.getElementById("email").value;
+            console.log("User Email:", userEmail); 
+
+            emailjs.sendForm('service_4vzj3hj', 'template_jsmrgfy', this)
+                .then(function () {
+                    console.log('SUCCESS!');
+                    // Clear the form after successful submission
+                    document.getElementById('consultation-form').reset();
+                    // show thank you message
+                    document.getElementById('thank-you-message').style.display = 'block';
+
+                }, function (error) {
+                    console.log('FAILED...', error);
+                });
+        });
+
+
+        // ------- CONTACT FORM ------- //
         window.onload = function () {
             document.getElementById('contact-form').addEventListener('submit', function (event) {
                 event.preventDefault();
@@ -327,29 +433,29 @@
         }
 
         // REMOVE LONG NAV TITLE ON SMALLER SCREENS
-        $(document).ready(function() {
-          // Function to update the text based on screen width
-          function updateNavbarText() {
-            var screenWidth = $(window).width();
-            var navbarBrand = $(".navbar-brand");
-      
-            if (screenWidth < 400) {
-              navbarBrand.text("Digital Realm");
-            } else {
-              navbarBrand.text("Digital Realm | Web Development");
+        $(document).ready(function () {
+            // Function to update the text based on screen width
+            function updateNavbarText() {
+                var screenWidth = $(window).width();
+                var navbarBrand = $(".navbar-brand");
+
+                if (screenWidth < 400) {
+                    navbarBrand.text("Digital Realm");
+                } else {
+                    navbarBrand.text("Digital Realm | Web Development");
+                }
             }
-          }
-      
-          // Call the function on page load
-          updateNavbarText();
-      
-          // Call the function when the window is resized
-          $(window).on("resize", function() {
+
+            // Call the function on page load
             updateNavbarText();
-          });
+
+            // Call the function when the window is resized
+            $(window).on("resize", function () {
+                updateNavbarText();
+            });
         });
     </script>
-   
+
 </body>
 
 </html>
