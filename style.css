@@ -1,38 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Comfortaa:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,700&family=Work+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 html {
-  --large-font: 'Work Sans', sans-serif;
-  --mid-font: 'Hind', sans-serif;
-  --small-font:'Nunito Sans', sans-serif;
+  --large-font: "Raleway", sans-serif;
+  --small-font: 'Nunito Sans', sans-serif;
+  
 }
 
 body {
   font-family: var(--small-font);
   font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color:white;
 }
-
-h2{
+.navbar a{
+  color: white !important;
+}
+h2 {
   font-family: var(--large-font);
-  font-size: 40px
+  font-size: 45px;
+  font-weight: 700;
 }
 
-h5{
+h5 {
   font-family: var(--small-font);
   font-weight: 700;
 }
-/* NAV */
-.navbar {
-  background-color: #e7e7e7 !important;
+
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
 }
 
-/* HERO */
+.main-section {
+  position: relative;
+  height: 100vh;
+  /* Set the height to 100vh */
+}
+
+.main-section .container {
+  position: relative;
+  z-index: 1;
+  padding: 100px 0;
+  text-align: center;
+  height: 80vh;
+}
+.main-content {
+  border-radius: 5px;
+  transition: all 1s ease;
+  z-index: 1;
+}
+.arrow{
+  height: 150px;
+
+}
+.lower-main{
+  text-align: center; /* Center text horizontally within the lower-main div */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto; /* Center the lower-main div horizontally */
+}
+
 .hero {
-  margin-top: 50px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(48, 45, 58);
+  margin-top: 10vh;
+}
+.other-section {
+  padding-bottom: 100px;
+
 }
 
-.hero h1 {
+h1 {
   font-family: "Aclonica";
   font-size: 70px;
   background: linear-gradient(to right, #218af3, #08ffe2,
@@ -41,13 +87,13 @@ h5{
   background-clip: text;
   -webkit-background-clip: text;
 }
-
 .logo {
   height: 250px;
 }
 
 /* HERO TEXT ANIMATION */
 .rotating-section {
+ padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,8 +101,7 @@ h5{
 
 .rotating-section h2 {
   font-size: 35px;
-  color: rgb(255, 255, 255);
-  animation: rotateWords 3s infinite;
+  animation: rotateWords 3.5s infinite;
 }
 
 @keyframes rotateWords {
@@ -84,20 +129,19 @@ h5{
 /* About */
 
 .custom-section {
-  background-color: #f0f0f0; /* Change the background color */
-  padding: 20px; /* Add padding for spacing */
-  border-radius: 15px; /* Add curved edges */
-  margin-bottom: 20px; /* Add margin to separate sections */
+  padding: 20px; 
+  border-radius: 15px; 
+  margin-bottom: 20px; 
   max-width: 700px;
 }
 
-/* Define different colors for each section */
+
 #about .custom-section:nth-child(odd) {
-  background-color: #d6b2f955; /* Yellow */
+  background-color: #9f45f955; 
 }
 
 #about .custom-section:nth-child(even) {
-  background-color: #b5c0ff92; /* Blue */
+  background-color: #415df892; 
 }
 /* Technologies */
 .technologies-section {
@@ -107,7 +151,6 @@ h5{
 .technology-logo {
   width: 100px;
   height: 100px;
-  /* border: 2px solid black; */
   object-fit: contain;
 }
 
@@ -123,14 +166,12 @@ h5{
 
 /* projects */
 .card {
-  background-color: #08ffe200;
+  background-color: transparent;
   border: none;
 }
 
 .card-title {
   font-size: 25px;
-
-
 }
 
 .project-card {
@@ -166,5 +207,8 @@ h5{
 
   .logo {
     height: 200px;
+  }
+  .arrow{
+    height:50px;
   }
 }
